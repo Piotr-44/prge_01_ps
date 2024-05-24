@@ -15,7 +15,7 @@ function Services() {
             <div className="services_obj">Baza danych</div>
           </Link>
         </div>
-        <div className="obrazki">obrazki</div>
+        <div className="obrazki">Obrazki</div>
       </div>
     </div>
   );
