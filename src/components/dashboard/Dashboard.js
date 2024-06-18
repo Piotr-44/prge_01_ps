@@ -44,7 +44,7 @@ function Dashboard() {
           />
         );
       })}
-      <MediaCard />
+      {/* <MediaCard /> */}
     </div>
   );
 }

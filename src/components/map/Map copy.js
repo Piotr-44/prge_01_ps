@@ -12,7 +12,7 @@ import axios from "axios";
 function Map() {
   const [wojewodztwa, setwojewodztwa] = useState(null);
   useEffect(() => {
-    console.log("aaa");
+    // console.log("aaa");
     const getData = () => {
       axios
         .get(
@@ -20,7 +20,7 @@ function Map() {
           //"https://jsonplaceholder.typicode.com/posts/1"
         )
         .then((dane) => {
-          console.log(dane);
+          // console.log(dane);
           setwojewodztwa(dane.data);
         });
     };
