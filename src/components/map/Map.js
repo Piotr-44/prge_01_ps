@@ -37,6 +37,9 @@ function Map() {
         .then((dane) => {
           // console.log(dane);
           setwojewodztwa(dane.data);
+        })
+        .catch((error) => {
+          console.log(`${error}`);
         });
     };
     getData();
@@ -60,7 +63,7 @@ function Map() {
               url="http://127.0.0.1:8080/geoserver/prge/wms"
             />
           </LayersControl.BaseLayer>
-          <LayersControl.Overlay checked name="Granice województw DB WFS">
+          <LayersControl.Overlay name="Granice województw DB WFS">
             {wojewodztwa ? (
               <GeoJSON data={wojewodztwa} onEachFeature={makePopup} />
             ) : (

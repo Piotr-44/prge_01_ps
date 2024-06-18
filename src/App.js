@@ -4,6 +4,7 @@ import Home from "./components/home/Home";
 import Services from "./components/services/Services";
 import Map from "./components/map/Map";
 import Dashboard from "./components/dashboard/Dashboard";
+import About from "./components/about/About";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/services/dashboard",
     element: <Dashboard />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
 ]);
 
